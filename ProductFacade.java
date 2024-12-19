@@ -31,6 +31,5 @@ public class ProductFacade{
     public List<Product> findAll() {
         return entityManager.createQuery("select o from Product o").getResultList();
     }
-
     
 }
