@@ -39,7 +39,7 @@ public class ProductRest {
     ManagedExecutorService mes;
 
     @Context
-    URIInfo uri info;
+    URIInfo uriInfo;
 
     private List<Product> productList = new ArrayList<>();
 
