@@ -68,7 +68,7 @@ public class ProductRest {
     public Response create(@Valid Product entity) {
         productFacade.create(entity);
         URI uri = uriInfo.getAbsolutePathBuilder().path(entity.getId()).build();
-        return Response.created(uri).ststus(Response.Status.CREATED).build();
+        return Response.created(uri).status(Response.Status.CREATED).build();
     }
 
 }
